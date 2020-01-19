@@ -1,0 +1,31 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Box {
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.Box:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    border: 2px solid #333333;
+    transition: 0.3s ease-in;
+    box-sizing: border-box;
+}
+
+.BoxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    flex-flow: row wrap;
+    flex-grow: inherit;
+    border: 5px solid #888888;
+}
