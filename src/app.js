@@ -1,4 +1,17 @@
-import React from 'react';
-import ReactDom from 'react-dom';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import CoinContainer from "./component/CoinContainer";
+import 'normalize.css/normalize.css';
+import "./style/coin.css";
 
-ReactDom.render(<h1>Hello</h1>, document.getElementById('app'));
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <CoinContainer />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("app"));
